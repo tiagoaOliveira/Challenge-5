@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+@font-face {
+  font-family: BigShouldersDisplay;
+  src: url(../fonts/BigShouldersDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: LexendDeca;
+  src: url(../fonts/LexendDeca-Regular.ttf);
+}
+.container {
+  display: grid;
+  margin: 8% 17% 10% 17%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  auto;
+}
+
+/* GENERAL
+======================== */
+.columns {
+  margin: 15% 20% 0 15%;
+}
+.columns h1{
+  margin-top: 8%;
+  font-family: BigShouldersDisplay;
+  font-weight: 700;
+}
+.columns p{
+  margin-top: 8%;
+  font-family: LexendDeca;
+  font-weight: 400;
+}
+.columns button{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+button a {
+  text-decoration: none;
+  background: transparent;
+  padding: 1.8vh 2.5vw 1.8vh 2.54vw;
+  border-radius: 20px;
+}
+button {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid white;
+  width: 10vw;
+  height: 6vh;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: transparent; 
+}
+button a:hover {
+  color: white;
+}
+
+/* COLUMN 1
+======================== */
+.column1 {
+  background: hsl(31, 77%, 52%);
+  color: white;
+  border-radius: 10px 0  0 10px;
+}
+.column1 h1 {
+  text-transform: uppercase;
+}
+.column1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+/* COLUMN 2
+======================== */
+.column2 {
+  background: hsl(184, 100%, 22%);
+  color: white;
+}
+.column2 h1 {
+  text-transform: uppercase;
+}
+.column2 a {
+  color: hsl(184, 100%, 22%);
+}
+/* COLUMN 3
+======================== */
+.column3 {
+  background: hsl(179, 100%, 13%);
+  color: white;
+  border-radius: 0 10px  10px 0;
+}
+.column3 h1 {
+  text-transform: uppercase;
+}
+.column3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 365px){
+.container {
+  display: grid;
+  margin: 8% 5%;
+  grid-template-columns: 1fr;
+}
+.column1 {
+  border-radius: 10px 10px 0 0;
+}
+.column3 {
+  border-radius: 0 0 10px 10px;
+}
+button a {
+  text-decoration: none;
+  background: transparent;
+  padding: 2vh 8.3vw;
+  border-radius: 20px;
+}
+button {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid white;
+  width: 35vw;
+  height: 7vh;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: transparent; 
+}
+button a:hover {
+  color: white;
+}
+}
