@@ -34,29 +34,22 @@
   font-family: LexendDeca;
   font-weight: 400;
 }
-.columns button{
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+.btn {
+  margin: 4rem 0 4rem 0;
 }
-button a {
+a {
+  display: inline-block;
   text-decoration: none;
-  background: transparent;
-  padding: 1.8vh 2.5vw 1.8vh 2.54vw;
+  background: white;
+  padding: 0.8rem 2rem;
   border-radius: 20px;
+  font-family: LexendDeca;
 }
-button {
-  text-decoration: none;
-  background-color: white;
-  border: 1px solid white;
-  width: 10vw;
-  height: 6vh;
-  border-radius: 20px;
-}
-button:hover {
-  background-color: transparent; 
-}
-button a:hover {
+.btn :hover {
+  background-color: transparent;
   color: white;
+  padding: 0.7rem 1.9rem;
+  border: 1px solid white;
 }
 
 /* COLUMN 1
@@ -85,6 +78,7 @@ button a:hover {
 .column2 a {
   color: hsl(184, 100%, 22%);
 }
+
 /* COLUMN 3
 ======================== */
 .column3 {
@@ -110,25 +104,5 @@ button a:hover {
 }
 .column3 {
   border-radius: 0 0 10px 10px;
-}
-button a {
-  text-decoration: none;
-  background: transparent;
-  padding: 2vh 8.3vw;
-  border-radius: 20px;
-}
-button {
-  text-decoration: none;
-  background-color: white;
-  border: 1px solid white;
-  width: 35vw;
-  height: 7vh;
-  border-radius: 20px;
-}
-button:hover {
-  background-color: transparent; 
-}
-button a:hover {
-  color: white;
 }
 }
